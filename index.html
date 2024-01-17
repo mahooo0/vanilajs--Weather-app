@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.ttf"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+  <div class="row">
+    <div class="header__logo">
+     <h2><a href="#">Weatherapp</h2>
+    </div>
+    <p class="header__date">
+    </p>
+    <div class="header__search">
+     <a class="locationbtn" id="location1" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="white">
+        <circle cx="12" cy="11" r="8" fill="none" stroke="white" stroke-width="2"/>
+        <circle cx="12" cy="11" r="3" fill="white"/>
+      </svg>
+    </a>
+     <form class="header__form">
+     <input type="search" placeholder="Type city name" class="header__search" id="heder_inp">
+     <a class="btn btn-primary searchbtn"  id="search_btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="white">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l6 6 1.5-1.5-6-6zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+      </svg>
+      
+     </a>
+     </div>
+    </div>
+  </div>
+</header>
+<main class="weather">
+   <h1 class="weather__message " id="weather__message">Please enter the name of the city or click on the  
+     <a class="locationbtn" id="location2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="white">
+        <circle cx="12" cy="11" r="8" fill="none" stroke="white" stroke-width="2"/>
+        <circle cx="12" cy="11" r="3" fill="white"/>
+      </svg>
+     </a>to allow us to get your location
+  </h1>
+  <h1 class="location" id="city"></h1>
+  <div class="weather__summary" id="today_weather">
+    
+  </div>
+
+
+
+</main>
+
+<section class="forecast">
+  <div class="row" id="day_list_dom">
+    
+  </div>
+</section>
+
+<script  src="script.js"></script>
+</body>
+</html>
